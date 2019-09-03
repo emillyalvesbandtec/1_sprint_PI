@@ -1,0 +1,42 @@
+create database Projeto;
+
+use Projeto;
+
+create table tbUsuario(
+idUsuario int primary key auto_increment,
+nome varchar(40),
+idade int,
+cod_bengala int, 
+email varchar(40)
+);
+select * from tbUsuario;
+
+create table tbBengala(
+idBengala int primary key auto_increment,
+bairro varchar(40),
+cidade varchar(40),
+rua varchar(40),
+estado varchar (40),
+idUsuario int,
+foreign key (idUsuario) references tbUsuario(idUsuario)
+);
+select * from tbBengala;
+
+create table tbEndereco(
+idEndereco int primary key auto_increment,
+rua varchar(40),
+bairro varchar (40),
+cidade varchar(40),
+estado varchar(40),
+numero int ,
+idUsuario int, 
+foreign key (idUsuario) references tbUsuario(idUsuario)
+);
+
+insert into tbUsuario value (null,'Leonardo',19,1,'leonardo@santos');
+
+select * from tbBengala;
+
+insert into tbBengala value (null,'Parque sampaio viana','São Paulo','TURIN','SP',1);
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Simulador financeiro</title>
+    </head>
+    <body>
+        <!-- navegação do site -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+            </ul>
+        </nav>
+
+        <img src="images/deficiente1.jpg" id="img-deficiente">
+        <div id="fundo-img">
+            <div id="conteudo-principal">
+                <h3 id="titulo">Bengala para deficientes visuais</h3>
+                <h4 id="sub-titulo">tenha mais acessibilidade</h4>
+                <button id="btn-gastos">cálculo de gastos</button>
+            </div>
+            <div id="modal">
+                <label>Quanto você gasta indo ao médico por acidentes causados pela falta de acessibilidade?</label>
+                <input type="number" id="gastos">
+                <label>Quantas vezes ao ano mais o menos você já foi ao médico?</label>
+                <input type="number" id="idas">
+                <button id="calcular">Calcular</button>
+                <button id="cancelar">Cancelar</button>
+                <label id="prejuizos">Prejuizo R$ : </label>
+            </div>
+        </div>
+
+
+        <link rel="stylesheet" href="assets/css/extra_small_simulador.css" media="(min-width: 0px) and (max-width: 575px)">
+        <link rel="stylesheet" href="assets/css/small_simulador.css" media="(min-width: 576px) and (max-width: 767px)">
+        <link rel="stylesheet" href="assets/css/medium_simulador.css" media="(min-width: 768px) and (max-width: 991px)">
+        <link rel="stylesheet" href="assets/css/large_simulador.css" media="(min-width: 992px) and (max-width: 1200px)">
+        <link rel="stylesheet" href="assets/css/extra-large_simulador.css" media="(min-width: 1201px)">
+        <script src="assets/js/script_simulador.js"></script>
+    </body>
+</html>
